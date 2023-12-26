@@ -1,18 +1,24 @@
 from django.db import models
 
 
-class Reporter(models.Model):
-    InputText = models.TextField(max_length=200)
+class Label(models.Model):
+    lblWord = models.Label(max_length=200)
 
     def __str__(self):
-        return self.InputText
+        return self.lblWord
 
 
-class Article(models.Model):
+class txtSpeed(models.Model):
     btnSpdUp = models.Button()
     btnSpdDwn = models.Button()
-    fldSpeed = models.TextField(max_length=50)
-    lblWord = models.Label()
+    fldSpeed = models.TextField()
 
     def __str__(self):
         return self.fldSpeed
+
+class InputBox(models.Model):
+    txtMain = models.TextField()
+    btnImport = models.Button()
+
+    def __str__(self):
+        return self.txtMain
