@@ -4,3 +4,6 @@ an app that allows a reader to read a book/text/etc. 1 word at a time putting ou
 I will be utilizing python, django, html, and css to work on this project as well as other resources to help me learn along the way.
 
 one part mentioned in the description above that will cause problems is the importing texts. This could hopefully import PDFs, HTMLs, TXTs, WRDs, and websites however each will display a unique problem that must be solved, especially websites. maybe by only looking at the body texts that would work, maybe i need to strip the sidebars, advertisements, pictures, etc. the work with the the text so i can get titles. I'm going to need to do a lot of research in unkown territory.
+
+How to run the project.
+Visiting the website [no website provided yet] should run the project, however to recreate you will need to download Python 3.12.3, django 5.0 on the IDE of your choice, Visual Studio Code was my IDE of choice.
