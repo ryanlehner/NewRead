@@ -1,2 +1,6 @@
 # NewRead
-an app that allows a reader to read a book/text/etc. 1 word at a time putting out hundreds of words a minute based on what the user wants.
+an app that allows a reader to read a book/text/etc. 1 word at a time putting out hundreds of words a minute based on what the user wants. holding down a button the user selects (defualt spacebar) will have the text be read to the user. this text can be written or maybe even imported from another source and once it's there you can see what you have read and click to where you want to read forward or backwards. the plan to make this work is the words read will be highlighted a color (color tbd maybe blue) that the user can change. the speed at which you read can be changed and the text will start at a lower speed and ramp up to the speed selected. the default start speed will be changable aswell as the ramp up speed so the user can have the speed they want to have.
+
+I will be utilizing python, django, html, and css to work on this project as well as other resources to help me learn along the way.
+
+one part mentioned in the description above that will cause problems is the importing texts. This could hopefully import PDFs, HTMLs, TXTs, WRDs, and websites however each will display a unique problem that must be solved, especially websites. maybe by only looking at the body texts that would work, maybe i need to strip the sidebars, advertisements, pictures, etc. the work with the the text so i can get titles. I'm going to need to do a lot of research in unkown territory.
