@@ -15,3 +15,8 @@ Label: In the middle of the page there will be a label that will display what is
 Read button: a button under the label that will indicate what key the user wants to use to read the text, this button can also be pushed in place of the key hold to read through the text.
 Wps speed: close to the label, this is a textbox, 2 button combo that will allow the user to choose the speed at which they read at. I will need to do some testing to find a good default value, however the user can type a prefered number in there or use the buttons to make the speed number go up or down (probably in multiples of 5 or 10).
 Menu: there should be a menu button that can change all settings and defaults to the users' liking.
+
+Credit:
+Ryan Lehner is the original creator
+django guide: followed the youtube series - https://www.youtube.com/playlist?list=PL39pssg07dpDJas1vxb7Dyw5f8SkAw6c-
+this readme followed the directions of this article - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
