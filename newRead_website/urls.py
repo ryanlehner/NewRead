@@ -20,9 +20,12 @@ from django.views.generic.base import TemplateView
 
 from . import views
 
+# shouldn't be necessary as the program should be 1 page
 urlpatterns = [
+    # admin page gives an admin option for the url
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name="index.html"), name="index")
-    path('about', views.about, name="about")
+    # go to different page
+    path('', TemplateView.as_view(template_name="index.html"), name="index"),
+    path('about', views.about, name="about"),
     path('contact', views.conact, name="contact")
 ]
