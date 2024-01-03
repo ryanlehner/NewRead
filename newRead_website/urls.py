@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic.base import TemplateView
+from django.contrib.auth import views as auth_views
 
 from . import views
 
@@ -27,5 +28,8 @@ urlpatterns = [
     # go to different page
     path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('about', views.about, name="about"),
-    path('contact', views.conact, name="contact")
+    path('contact', views.conact, name="contact"),
+
+    # Django Auth
+    path('/accounts/login', auth_views.LoginView.as_view(), name='login')
 ]
