@@ -31,5 +31,5 @@ urlpatterns = [
     path('contact', views.conact, name="contact"),
 
     # Django Auth
-    path('/accounts/login', auth_views.LoginView.as_view(), name='login')
+    path('/accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login')
 ]
