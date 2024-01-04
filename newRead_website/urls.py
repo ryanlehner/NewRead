@@ -30,6 +30,6 @@ urlpatterns = [
     path('about', views.about, name="about"),
     path('contact', views.conact, name="contact"),
 
-    # Django Auth
+    # Django Auth (login page)
     path('/accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login')
 ]
