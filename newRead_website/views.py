@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
+from django.views.generic.base import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # nav bar
 # all are the same, just different ways to do things
@@ -13,3 +15,6 @@ def about(request):
 
 def about(request):
     return render(request, 'contact.html')
+
+class ProfileView(LoginRequiredMixin, TemplateView):
+    template_name = 'accounts/profile.html'

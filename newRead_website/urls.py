@@ -29,7 +29,9 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('about', views.about, name="about"),
     path('contact', views.conact, name="contact"),
+    path('accounts/profile', views.ProfileView.as_view(), name="profile"),
 
     # Django Auth (login page)
-    path('/accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login')
+    path('/accounts/login', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
+    path('/accounts/logout', auth_views.LogoutView.as_view(), name="logout")
 ]
