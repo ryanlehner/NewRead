@@ -25,7 +25,7 @@ from . import views
 urlpatterns = [
     # admin page gives an admin option for the url
     path('admin/', admin.site.urls),
-    path("", include('newRead_website.apps.public')),
+    path("", include('newRead_website.apps.public.urls')),
     path('accounts/profile', views.ProfileView.as_view(), name="profile"),
 
     # Django Auth (login page)
